@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.DashboardFragment">
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="@dimen/_12sdp"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="@dimen/_48sdp"
+           android:layout_height="@dimen/_48sdp"
+           android:text="LOGO"
+           android:layout_alignParentStart="true"
+           android:textSize="@dimen/_12ssp"
+           android:layout_centerVertical="true"
+           android:textAlignment="center"
+           android:gravity="center_vertical"
+           android:background="@drawable/logobg"
+           android:backgroundTint="#E02021"
+           android:layout_marginVertical="@dimen/_20sdp"
+           android:textColor="@color/white"
+           android:textStyle="bold"></TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Home"
+           android:layout_centerInParent="true"
+           android:layout_centerVertical="true"
+           android:layout_gravity="center"
+           android:textSize="@dimen/_16ssp"
+           android:layout_marginVertical="@dimen/_20sdp"
+           android:textColor="@color/black"
+           android:textStyle="bold"></TextView>
+
+   </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:background="@drawable/logobg"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_12ssp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:elevation="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:hint="Search"
+            android:drawableEnd="@drawable/group"
+            android:textColor="@color/black"
+            android:textColorHint="#7E8892"
+            android:padding="@dimen/_14sdp"
+            android:singleLine="true"
+            android:textSize="@dimen/_10ssp">
+
+        </EditText>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italian"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/italian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_layout"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mexican"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginVertical="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMexican2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_layout"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="American"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginVertical="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMexican"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_layout"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asian"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginVertical="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAsian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12ssp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_layout"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

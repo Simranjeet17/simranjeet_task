@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_12sdp"
+    android:orientation="vertical"
+    tools:context=".ui.LoginFragment">
+--
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/_38sdp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontWeight="700"
+                android:text="@string/welcome"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:text="@string/please_login_or_sign_up_to_continue_our_app"
+                android:textColor="#666666"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_44sdp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:hint="email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:hint="password"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#E02021"
+                android:clickable="true"
+                android:elevation="@dimen/_4sdp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#EEEEEE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="8dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#EEEEEE" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#3B5998"
+                android:gravity="center_horizontal"
+                android:focusable="true"
+                android:elevation="@dimen/_4sdp"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:id="@+id/tvFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/facebook"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_12sdp"
+                    android:text="Continue with Facebook"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:gravity="center_horizontal"
+                android:focusable="true"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:elevation="@dimen/_4sdp"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:id="@+id/tvGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/google"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:text="Continue with Google"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:gravity="center_horizontal"
+                android:focusable="true"
+                android:elevation="@dimen/_4sdp"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:id="@+id/tvApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/apple_logo"
+                    android:gravity="center"
+                    android:padding="@dimen/_12sdp"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:text="Continue with Apple"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account_sign_up"
+                android:textColor="#666666"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_30sdp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+</LinearLayout>

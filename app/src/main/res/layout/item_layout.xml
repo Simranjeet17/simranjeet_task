@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/_6sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+        android:src="@drawable/mask_group">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amigo’s cafe"
+        android:textColor="#4B4B4B"
+        android:textSize="@dimen/_12ssp"
+        android:singleLine="true">
+
+    </TextView>
+    
+
+</LinearLayout>

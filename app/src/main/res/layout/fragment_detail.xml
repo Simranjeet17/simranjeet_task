@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DetailFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/baseline_arrow_back_24">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ivdetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/mask_group">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:text="Alfredo kitchen"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_continental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:text="Maxican"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4D5154"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        android:layout_marginTop="@dimen/_6sdp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:text="Address"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4D5154"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:text="#123 east Mini Market"
+        android:layout_marginTop="@dimen/_6sdp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:text="Phone"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4D5154"
+        android:textSize="@dimen/_12ssp"
+        android:text="+123-4567-890"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#E02021"
+        android:clickable="true"
+        android:elevation="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:text="Order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+</LinearLayout>

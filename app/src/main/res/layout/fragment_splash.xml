@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_12sdp"
+    android:orientation="vertical"
+    tools:context=".ui.LoginFragment">
+    --
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/_38sdp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontWeight="700"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:text="Create an new account"
+                android:textColor="#666666"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_153"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_gravity="center_horizontal"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add a profile picture (optional)"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#666666"
+                android:textSize="@dimen/_12ssp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_44sdp"
+                android:text="Full Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:hint="full name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:hint="email"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:hint="phone number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                android:hint="password"
+                android:maxLength="16"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_Confirm_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                android:hint="confirm password"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp" />
+
+                <CheckBox
+                    android:id="@+id/cb_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#AAAAAA"
+                    android:textColor="#AAAAAA"
+                    android:text="@string/by_creating_an_account_you_have_to_agree_with_our_them_condication"
+                    android:textSize="@dimen/_10ssp"/>
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#E02021"
+                android:clickable="true"
+                android:elevation="@dimen/_4sdp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/textlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account_sign_up2"
+                android:textColor="#666666"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_30sdp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+</LinearLayout>
